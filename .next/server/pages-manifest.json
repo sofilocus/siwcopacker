@@ -2,5 +2,8 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/siw-maquila": "pages/siw-maquila.js"
+  "/api/save-gsheet": "pages/api/save-gsheet.js",
+  "/thankyou": "pages/thankyou.js",
+  "/api/send-mail": "pages/api/send-mail.js",
+  "/api/fb-event": "pages/api/fb-event.js"
 }

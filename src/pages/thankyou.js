@@ -1,4 +1,5 @@
 import { info } from "../../info";
+import WhatsButton from "../components/Buttons/whatsButton";
 
 export default function ThankYou() {
   return (
