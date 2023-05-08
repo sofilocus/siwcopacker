@@ -2,6 +2,5 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/siw-toallitas": "pages/siw-toallitas.js",
-  "/": "pages/index.js"
+  "/siw-maquila": "pages/siw-maquila.js"
 }
