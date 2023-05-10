@@ -21,7 +21,7 @@ export default function About() {
             en uno portátil, para poder llevarlo de forma práctica y usarlo para
             lo que se necesite.
           </p>
-          <div className="md:flex md:flex-row flex flex-col items-center justify-around py-20">
+          <div className="md:flex md:flex-row grid grid-cols-2 items-center justify-around py-20">
             {PRODUCTOS.map((producto) => {
               return (
                 <div className="flex flex-col items-center p-2">
@@ -50,14 +50,14 @@ export default function About() {
             comercial.
           </p>
         </div>
-        <div className="flex flex-row items-center justify-around py-20">
+        <div className="md:flex md:flex-row grid grid-cols-1 md:gap-0 gap-10 items-center justify-around py-20">
           {SERVICIOS.map((servicio) => {
             return (
-              <div className="flex flex-col  items-center md:p-2 p-1">
+              <div className="flex items-center md:p-2 p-1">
                 <p className="font-semibold flex items-center justify-center w-2/3 mb-5 text-center">
                   {servicio.description}
                 </p>
-                <div className="flex ">{servicio.img}</div>
+                <div className="flex w-2/3 ">{servicio.img}</div>
               </div>
             );
           })}
@@ -70,15 +70,15 @@ export default function About() {
       </section>
       <section className="pb-40">
         <div className="flex flex-col">
-          <div className="md:flex md:flex-row flex flex-col items-center">
-            <div>
+          <div className="md:flex md:flex-row flex flex-col-reverse items-center">
+            <div className="text-center md:text-left">
               <h2>Un sachet de nuestro trabajo</h2>
-              <p className="mt-20">
+              <p className="mt-5">
                 Testimonios, otros proyectos, casos de estudio. Incluso pueden
                 ser garantías contra el precio.
               </p>
             </div>
-            <div className="">
+            <div className="w-2/3">
               <Image
                 src={s4}
                 width={500}
@@ -88,24 +88,24 @@ export default function About() {
               />
             </div>
           </div>
-          <div className="flex justify-center">
+          <div className="flex justify-center mt-10">
             <ActionButton>
-              <p>Dime cuántos necesitas y para cuándo.</p>
+              <p className="">Dime cuántos necesitas y para cuándo.</p>
             </ActionButton>
           </div>
         </div>
       </section>
       <section className="pb-40">
         <div className="flex flex-col">
-          <div className="md:flex md:flex-row flex flex-col items-center">
-            <div>
+          <div className="md:flex md:flex-row flex flex-col-reverse items-center">
+            <div className="text-center md:text-left">
               <h2>El diseño de tus toallitas va por nuestra cuenta</h2>
-              <p className="mt-20">
+              <p className="mt-5">
                 El empaque es tan importante como el contenido. Si no tienes el
                 diseño, nosotros te lo incluimos sin costo.
               </p>
             </div>
-            <div className="">
+            <div className="w-2/3">
               <Image
                 src={s5}
                 width={500}
@@ -115,7 +115,7 @@ export default function About() {
               />
             </div>
           </div>
-          <div className="flex justify-center">
+          <div className="flex justify-center mt-10">
             <ActionButton>
               <p>Dime cuántos necesitas y para cuándo.</p>
             </ActionButton>
@@ -128,7 +128,7 @@ export default function About() {
             Resuelve tu duda y cotiza los promocionales de tu marca
           </h2>
           <div className="md:flex md:flex-row flex flex-col items-center justify-between">
-            <div className="flex flex-row">
+            <div className="w-2/3">
               <Image
                 src={s6}
                 width={500}
@@ -147,7 +147,7 @@ export default function About() {
             </div>
           </div>
           <div className="md:flex md:flex-row flex flex-col items-center justify-between">
-            <div className="flex flex-grow">
+            <div className="flex flex-grow w-2/3">
               <Image
                 src={s7}
                 width={500}
@@ -169,9 +169,9 @@ export default function About() {
           </div>
         </div>
       </section>
-      <section className="pb-40">
+      <section className="pb-10">
         <div className="flex flex-col">
-          <div className="md:flex md:flex-row flex flex-col items-center">
+          <div className="md:flex md:flex-row flex flex-col flex-col-reverse items-center">
             <div>
               <h2>Haz que confíen en ti, confiando en nosotros</h2>
               <p className="mt-20 md:w-[42rem]">
@@ -183,7 +183,7 @@ export default function About() {
                 evento)
               </p>
             </div>
-            <div className="">
+            <div className="w-2/3">
               <Image
                 src={s8}
                 width={500}

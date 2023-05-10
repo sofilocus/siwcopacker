@@ -2,8 +2,6 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/api/save-gsheet": "pages/api/save-gsheet.js",
-  "/thankyou": "pages/thankyou.js",
-  "/api/send-mail": "pages/api/send-mail.js",
-  "/api/fb-event": "pages/api/fb-event.js"
+  "/toallitas-humedas-individuales": "pages/toallitas-humedas-individuales.js",
+  "/": "pages/index.js"
 }

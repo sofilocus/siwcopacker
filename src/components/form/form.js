@@ -71,16 +71,15 @@ export default function Form() {
         })}
       />
       {renderError(errors.email)}
-      <label htmlFor="age">Age</label>
+      <label htmlFor="Company">Compañía</label>
       <input
-        placeholder="24"
-        error={errors.age}
-        onlyNumbers
-        {...register("age", {
-          required: "Por favor compártenos cuantos años tienes",
+        placeholder="Mi compañía"
+        error={errors.company}
+        {...register("company", {
+          required: "Por favor compártenos el nombre de tu compañia.",
         })}
       />
-      {renderError(errors.email)}
+      {renderError(errors.company)}
 
       <div className=" mt-5 font-bold">
         <FormButton>

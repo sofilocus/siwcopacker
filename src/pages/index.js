@@ -16,7 +16,7 @@ export async function getServerSideProps() {
   return {
     redirect: {
       permanent: false,
-      destination: "siw-toallitas",
+      destination: "toallitas-humedas-individuales",
     },
     props: {},
   };
