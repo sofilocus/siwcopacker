@@ -92,7 +92,7 @@ export default function Form() {
           </button>
         </FormButton>
       </div>
-      <p className="mb-20 mt-10 mini">
+      <p className="mb-20 mt-20 mini">
         {"Al dar click aceptas nuestros "}
         <Link href={info.termsConditions ?? ""} passhref>
           <a target="_blank" className="mini font-semibold">
