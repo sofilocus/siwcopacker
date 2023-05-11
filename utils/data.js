@@ -33,7 +33,7 @@ export const PRODUCTOS = [
 
 export const PRODMAQ = [
   {
-    name: "Saches",
+    name: "Muestras individuales",
     img: <Image src={sach} className="rounded-lg" alt="image" />,
   },
   {
@@ -41,7 +41,7 @@ export const PRODMAQ = [
     img: <Image src={prom} className="rounded-lg" alt="image" />,
   },
   {
-    name: "Toallitas individuales",
+    name: "Amenidades",
     img: <Image src={toa} className="rounded-lg" alt="image" />,
   },
 ];

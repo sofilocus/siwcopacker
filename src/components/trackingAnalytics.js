@@ -49,7 +49,7 @@ export default function TrackingAnalytics() {
         dangerouslySetInnerHTML={{
           __html: `
           <iframe 
-            src="https://www.googletagmanager.com/ns.html?id=${process.env.PIXEL}"
+            src="https://www.googletagmanager.com/ns.html?id=${process.env.GTM}"
             height="0" width="0" style="display:none;visibility:hidden">
           </iframe>
           `,
