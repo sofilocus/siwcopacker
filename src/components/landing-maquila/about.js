@@ -25,7 +25,7 @@ export default function About() {
             individuales y Monodosis. Para que los uses como promocionales, una
             nueva presentación de tus productos o lo que necesites.
           </p>
-          <div className="md:flex md:flex-row grid grid-cols-2 gap-4 items-center justify-around py-20">
+          <div className="md:flex md:flex-row grid grid-cols-2 gap-5 items-center justify-around py-20">
             {PRODMAQ.map((producto) => {
               return (
                 <div className="flex flex-col items-center md:p-2 p-1 justify-center">
