@@ -16,12 +16,16 @@ export default function About() {
       <section className="pt-20 pb-20">
         <div className="flex flex-col">
           <p className="">
-            En S&IW somos expertos en envasar versiones individuales de tu
-            producto en sobrecitos con o sin toallita. Nos encargamos de la
-            manufactura de sachets, toallitas individuales y monodosis para que
-            los uses como promocionales o lo que necesites.
+            En SIW somos expertos en envasar versiones individuales de tus
+            productos en “Sachets” (sobrecitos con una pequeña dosis de tu
+            producto. Incluso puede ir acompañado de una toallita)
+            <br />
+            <br />
+            Nos encargamos de la Maquila de envasado en Sachets, Toallitas
+            individuales y Monodosis. Para que los uses como promocionales, una
+            nueva presentación de tus productos o lo que necesites.
           </p>
-          <div className="md:flex md:flex-row grid grid-cols-2 gap-4 items-center justify-around py-20">
+          <div className="md:flex md:flex-row grid grid-cols-2 gap-5 items-center justify-around py-20">
             {PRODMAQ.map((producto) => {
               return (
                 <div className="flex flex-col items-center md:p-2 p-1 justify-center">
@@ -74,7 +78,7 @@ export default function About() {
           </ActionButton>
         </div>
       </section>
-      <section className="pb-40">
+      {/* <section className="pb-40">
         <div className="flex flex-col">
           <div className="md:flex md:flex-row flex flex-col-reverse items-center">
             <div className="md:text-left text-center">
@@ -100,16 +104,21 @@ export default function About() {
             </ActionButton>
           </div>
         </div>
-      </section>
+      </section> */}
       <section className="pb-40">
         <div className="flex flex-col">
           <div className="md:flex md:flex-row flex flex-col-reverse items-center">
             <div className="md:text-left text-center">
-              <h2>El diseño de tus toallitas va por nuestra cuenta</h2>
-              <p className="mt-5">
-                El empaque es tan importante como el contenido. Si no tienes el
-                diseño, nosotros te lo incluimos sin costo.
-              </p>
+              <h2>El diseño va por nuestra cuenta</h2>
+              <div className="flex flex-col gap-4">
+                <p className="mt-5">
+                  El empaque es tan importante como el contenido.
+                </p>
+                <p>
+                  Si no tienes diseño y éste puede ser breve, nosotros te lo
+                  incluimos sin costo.
+                </p>
+              </div>
             </div>
             <div className="w-2/3">
               <Image
@@ -147,8 +156,8 @@ export default function About() {
             <div>
               <p className="md:w-[42rem]">
                 <b>Tiempo de vida del producto envasado</b> <br /> Desde 6 hasta
-                24 meses (dependiendo de materiales a utilizar se requieren
-                pruebas defactibilidad)
+                24 meses (dependiendo de materiales a utilizar. Se requieren
+                pruebas de factibilidad)
               </p>
             </div>
           </div>
