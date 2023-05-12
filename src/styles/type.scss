@@ -49,6 +49,15 @@ $fluid_steps: (
   font-display: swap;
 }
 
+.main_headline {
+  --tt-key: main_headline;
+  --tt-ease: ease-in;
+  font-size: 1px;
+  font-weight: 100;
+  line-height: 1.5;
+  letter-spacing: 0.1rem;
+}
+
 h1 { @extend .ft-7 }
 h2 { @extend .ft-5 }
 h3 { @extend .ft-4 }
