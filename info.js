@@ -1,5 +1,5 @@
 export const info = {
-  legalName: "Antonio Lozano",
+  legalName: "ANTONIO ENRIQUE LOZANO DEL REAL",
   companyName: "S&IW Copacker",
   description: "Sachets y Toallitas Individuales",
   email: {
@@ -17,7 +17,7 @@ export const info = {
     instagram: "siwcopacker",
   },
   address: {
-    address: "CALLE GORRION #1390",
+    address: "CALLE GORRION",
     col: "OCHO DE JULIO 1A Y 2A SECCION",
     cp: "44910",
     city: "GUADALAJARA",

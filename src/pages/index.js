@@ -16,7 +16,7 @@ export async function getServerSideProps() {
   return {
     redirect: {
       permanent: false,
-      destination: "toallitas-humedas-individuales",
+      destination: "maquila-sachets",
     },
     props: {},
   };
