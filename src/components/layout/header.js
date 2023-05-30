@@ -39,7 +39,7 @@ export default function Header({ sub }) {
                 target="_blank"
                 legacyBehavior
               >
-                <WhatsButton>Mandame un Whatsapp</WhatsButton>
+                <WhatsButton>Mándanos un WhatsApp</WhatsButton>
               </a>
             </div>
           </div>

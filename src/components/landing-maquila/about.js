@@ -1,14 +1,13 @@
 import React from "react";
-import { PRODMAQ, PRODUCTOS, SERVICIOS } from "../../../utils/data";
+import { PRODMAQ, SERVICIOS } from "../../../utils/data";
 import ActionButton from "../Buttons/actionButton";
-import Link from "next/link";
 import Image from "next/image";
-import s4 from "../../../public/assets/08.png";
 import s5 from "../../../public/assets/09.png";
 import s6 from "../../../public/assets/12.png";
 import s7 from "../../../public/assets/13.png";
 import s8 from "../../../public/assets/14.png";
 import Form from "../form/form";
+import { info } from "../../../info";
 
 export default function About() {
   return (
@@ -208,16 +207,25 @@ export default function About() {
               />
             </div>
           </div>
-          <div className="flex items-center justify-center pt-20">
-            <h2 className="md:w-2/3">
-              Estamos listos para empezar, mándame un WhatsApp o llena el
-              formulario y cotiza.
-            </h2>
-          </div>
         </div>
       </section>
       <section id="contact">
-        <Form />
+        <h2 className="md:w-2/3 mt-20 mb-20">
+          Estamos listos para empezar, mándame un WhatsApp o llena el
+          formulario y cotiza.
+        </h2>
+        <div className="flex flex-col-reverse md:flex-row">
+          <div className="w-full md:w-1/2 mb-20">
+            <p className="font-bold mb-8">{info.companyName}</p>
+            <p className="mb-4"><a href={`tel:${info.phoneNumber}`}>{info.phoneNumber}</a></p>
+            <p className="mb-8"><a href="mailto:info@siwcopacker.com">info@siwcopacker.com</a></p>
+            <p>{info.address.address}</p>
+            <p>{info.address.col}</p>
+            <p>CP {info.address.cp}</p>
+            <p>{info.address.city}, {info.address.state}</p>
+          </div>
+          <Form />
+        </div>
       </section>
     </>
   );

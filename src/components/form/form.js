@@ -18,7 +18,6 @@ export default function Form() {
     register,
     handleSubmit,
     formState: { errors },
-    watch,
   } = useForm();
 
   const onSubmit = (data) => {
@@ -41,8 +40,8 @@ export default function Form() {
   );
 
   return (
-    <form className="mt-12 " onSubmit={handleSubmit(onSubmit)}>
-      <label htmlFor="fullName">Nombre</label>
+    <form onSubmit={handleSubmit(onSubmit)}>
+      <label className="mt-0" htmlFor="fullName">Nombre</label>
       <input
         placeholder="Nombre"
         {...register("fullName", {
@@ -60,7 +59,6 @@ export default function Form() {
       {renderError(errors.phone)}
       <label htmlFor="email">Email</label>
       <input
-        label="Correo"
         placeholder="mail@mail.com"
         {...register("email", {
           required: "Por favor compártenos un correo electrónico",
@@ -74,7 +72,6 @@ export default function Form() {
       <label htmlFor="Company">Compañía</label>
       <input
         placeholder="Mi compañía"
-        error={errors.company}
         {...register("company", {
           required: "Por favor compártenos el nombre de tu compañia.",
         })}
