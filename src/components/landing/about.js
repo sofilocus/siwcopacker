@@ -196,7 +196,7 @@ export default function About() {
         </div>
       </section>
       <section id="contact">
-        <Form />
+        <Form page="Toallitas"/>
       </section>
     </div>
   );

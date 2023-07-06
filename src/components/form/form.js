@@ -11,7 +11,7 @@ import SendMail from "../../services/mail";
 import { useRouter } from "next/router";
 import FormButton from "../Buttons/formButton";
 
-export default function Form() {
+export default function Form({page}) {
   const [awaiting, setAwaiting] = useState(false);
   const router = useRouter();
   const {
@@ -23,9 +23,14 @@ export default function Form() {
   const onSubmit = (data) => {
     setAwaiting(true);
 
-    SaveOnGSheet(data)
+    fetch('https://hook.us1.make.com/wd0ikuspqmeonx71b95o54v1bqtxxclq', {
+      method: 'POST',
+      body: JSON.stringify({ ...data, page }),
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    })
       .then(fbEvent("Lead", data))
-      .then(SendMail(data))
       .then(() => {
         setAwaiting(false);
         window.open(
