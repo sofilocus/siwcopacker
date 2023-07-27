@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import heroimg from "../../../public/maquila-assets/hero.png";
+import heroimg from "../../../public/assets/hero-tica.png";
 
 export default function Hero() {
   return (

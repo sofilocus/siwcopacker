@@ -55,7 +55,7 @@ export default function About() {
             individuales y Monodosis. Para que los uses como promocionales, una
             nueva presentación de tus productos o lo que necesites.
           </p>
-          <div className="md:flex md:flex-row grid grid-cols-2 items-start justify-between gap-5 py-20">
+          <div className="md:flex md:flex-row flex flex-col md:items-start items-center justify-center gap-5 py-20">
             {PRODUCTOS2.map((producto) => {
               return (
                 <div className="flex flex-col items-center p-2 w-2/3 bg-indigo-50 border rounded-xl">
