@@ -221,7 +221,7 @@ export default function About() {
               <a href={`tel:${info.phoneNumber}`}>{info.phoneNumber}</a>
             </p>
             <p className="mb-8">
-              <a href="mailto:info@siwcopacker.com">info@siwcopacker.com</a>
+              <a href="mailto:contacto@siwcopacker.com">contacto@siwcopacker.com</a>
             </p>
             <p>{info.address.address}</p>
             <p>{info.address.col}</p>

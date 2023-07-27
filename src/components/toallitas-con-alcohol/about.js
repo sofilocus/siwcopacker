@@ -10,10 +10,16 @@ import s9 from "../../../public/assets/15.png";
 
 import Form from "../form/form";
 import { info } from "../../../info";
+import Head from "next/head";
 
 export default function About() {
   return (
     <>
+      <Head>
+        <title>Toallitas con alcohol</title>
+        <meta name="description"
+              content="Ya utilizado en diferentes actividades: Hoteles, Laboratorios Farmacéuticos Cosméticos y Veterinarios, Industrial, Automotriz y más." />
+      </Head>
       <section className="mb-10 mt-20">
         <h1 className="">Toallitas individuales con alcohol</h1>
         <div className="md:flex md:flex-row flex flex-col border items-center rounded-xl">
@@ -254,7 +260,7 @@ export default function About() {
               <a href={`tel:${info.phoneNumber}`}>{info.phoneNumber}</a>
             </p>
             <p className="mb-8">
-              <a href="mailto:info@siwcopacker.com">info@siwcopacker.com</a>
+              <a href="mailto:contacto@siwcopacker.com">contacto@siwcopacker.com</a>
             </p>
             <p>{info.address.address}</p>
             <p>{info.address.col}</p>
@@ -263,7 +269,7 @@ export default function About() {
               {info.address.city}, {info.address.state}
             </p>
           </div>
-          <Form page="Sachets" />
+          <Form page="Toallitas con alcohol" />
         </div>
       </section>
     </>

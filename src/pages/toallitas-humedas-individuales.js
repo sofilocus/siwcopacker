@@ -1,10 +1,12 @@
 import About from "../components/landing/about";
 import Hero from "../components/landing/hero";
 import Head from "next/head";
-import { useState } from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import s4 from "../../public/assets/08.png";
+import { info } from "../../info";
+import Form from "../components/form/form";
 
 export default function Landing() {
   const [showModal, setShowModal] = useState(true);
@@ -49,6 +51,30 @@ export default function Landing() {
         <Hero />
         <div className="md:max-w-7xl w-screen flex flex-col items-center justify-center container mx-auto">
           <About />
+          <section id="contact">
+            <h2 className="md:w-2/3 mt-20 mb-20">
+              Estamos listos para empezar, mándame un WhatsApp o llena el formulario
+              y cotiza.
+            </h2>
+            <div className="flex flex-col-reverse md:flex-row">
+              <div className="w-full md:w-1/2 mb-20">
+                <p className="font-bold mb-8">{info.companyName}</p>
+                <p className="mb-4">
+                  <a href={`tel:${info.phoneNumber}`}>{info.phoneNumber}</a>
+                </p>
+                <p className="mb-8">
+                  <a href="mailto:contacto@siwcopacker.com">contacto@siwcopacker.com</a>
+                </p>
+                <p>{info.address.address}</p>
+                <p>{info.address.col}</p>
+                <p>CP {info.address.cp}</p>
+                <p>
+                  {info.address.city}, {info.address.state}
+                </p>
+              </div>
+              <Form page="Sachets" />
+            </div>
+          </section>
         </div>
       </section>
     </>
