@@ -12,6 +12,10 @@ import s1 from "../public/assets/05.png";
 import s2 from "../public/assets/06.png";
 import s3 from "../public/assets/07.png";
 
+import p1 from "../public/assets/16.png";
+import p2 from "../public/assets/17.png";
+import p3 from "../public/assets/18.png";
+
 export const PRODUCTOS = [
   {
     name: "Desifectante",
@@ -28,6 +32,20 @@ export const PRODUCTOS = [
   {
     name: "Desmaquillante",
     img: <Image src={desm} className="rounded-lg" alt="image" />,
+  },
+];
+export const PRODUCTOS2 = [
+  {
+    name: "Una práctica solución a tus procesos",
+    img: <Image src={p1} className="rounded-lg" alt="image" />,
+  },
+  {
+    name: "Ideal para kits: “....limpie la superficie antes de aplicarse”",
+    img: <Image src={p2} className="rounded-lg" alt="image" />,
+  },
+  {
+    name: "Personalizados",
+    img: <Image src={p3} className="rounded-lg" alt="image" />,
   },
 ];
 
