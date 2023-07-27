@@ -1,18 +1,49 @@
 import React from "react";
-import { PRODMAQ, SERVICIOS } from "../../../utils/data";
+import { PRODMAQ, PRODUCTOS2, SERVICIOS } from "../../../utils/data";
 import ActionButton from "../Buttons/actionButton";
 import Image from "next/image";
 import s5 from "../../../public/assets/09.png";
 import s6 from "../../../public/assets/12.png";
 import s7 from "../../../public/assets/13.png";
 import s8 from "../../../public/assets/14.png";
+import s9 from "../../../public/assets/15.png";
+
 import Form from "../form/form";
 import { info } from "../../../info";
 
 export default function About() {
   return (
     <>
-      <section className="pt-20 pb-20">
+      <section className="mb-10 mt-20">
+        <h1 className="">Toallitas individuales con alcohol</h1>
+        <div className="md:flex md:flex-row flex flex-col border items-center rounded-xl">
+          <ul className="flex flex-col bg-indigo-50 p-5 rounded-l-xl cursor-default">
+            <h3 className="pl-2">Características</h3>
+            <li>Prácticos sobres individuales (6.0x7.5cm)</li>
+            <li>
+              Resistente tela no tejida para facilitar su aplicación (18x11cm)
+              (incluso en trabajo rudo)
+            </li>
+            <li>
+              Empaques seguros de alta barrera (útil desde 6 hasta 24 meses)
+            </li>
+            <li>Concentración: 70%</li>
+            <li>
+              Múltiples usos: Limpieza, Desinfección, Solventes, Uso industrial,
+              Kits, etc.
+            </li>
+            <li>
+              Ya utilizado en diferentes actividades: Hoteles, Laboratorios
+              Farmacéuticos Cosméticos y Veterinarios, Industrial, Automotriz y
+              más.
+            </li>
+          </ul>
+          <div className="w-2/3 md:flex flex items-center justify-center">
+            <Image src={s9} />
+          </div>
+        </div>
+      </section>
+      <section className="pt-10 pb-20">
         <div className="flex flex-col">
           <p className="">
             En SIW somos expertos en envasar versiones individuales de tus
@@ -24,7 +55,19 @@ export default function About() {
             individuales y Monodosis. Para que los uses como promocionales, una
             nueva presentación de tus productos o lo que necesites.
           </p>
-          <div className="md:flex md:flex-row grid grid-cols-2 gap-5 items-center justify-around py-20">
+          <div className="md:flex md:flex-row grid grid-cols-2 items-start justify-between gap-5 py-20">
+            {PRODUCTOS2.map((producto) => {
+              return (
+                <div className="flex flex-col items-center p-2 w-2/3 bg-indigo-50 border rounded-xl">
+                  <p className="font-semibold text-center mb-5">
+                    {producto.name}
+                  </p>
+                  <div className="flex rounded-lg">{producto.img}</div>
+                </div>
+              );
+            })}
+          </div>
+          {/* <div className="md:flex md:flex-row grid grid-cols-2 gap-5 items-center justify-around py-20">
             {PRODMAQ.map((producto) => {
               return (
                 <div className="flex flex-col items-center md:p-2 p-1 justify-center">
@@ -33,13 +76,30 @@ export default function About() {
                 </div>
               );
             })}
+          </div> */}
+        </div>
+      </section>
+      <section className="pb-40">
+        <div className="md:flex md:flex-row flex flex-col gap-5 bg-indigo-50 p-5 items-center rounded-xl">
+          <div className="w-2/3 items-center flex justify-center">
+            <Image src={s6} />
           </div>
-
-          <div className="flex items-center justify-center">
-            <ActionButton>
-              <p>Cuéntame si quieres empezar a maquilar.</p>
-            </ActionButton>
+          <div className="text-center">
+            <p>
+              S&IW Co-Packers nace de la experiencia de mas de 15 años de
+              ofrecer soluciones en presentaciones individuales. <br /> <br />
+              Somos expertos en la maquila de toallitas húmedas individuales.
+              Refrescantes, Antibacteriales, Desinfectantes, Desmaquillantes,
+              ......Incluso su própia fórmula. <br /> <br /> Además, te ayudamos
+              a envasar versiones individuales de tus productos en sobrecitos
+              conocidos como “Sachets”.
+            </p>
           </div>
+        </div>
+        <div className="flex items-center justify-center pt-20">
+          <ActionButton>
+            <p>Cuéntame si quieres empezar a maquilar.</p>
+          </ActionButton>
         </div>
       </section>
       <section className="pb-40">
@@ -77,33 +137,6 @@ export default function About() {
           </ActionButton>
         </div>
       </section>
-      {/* <section className="pb-40">
-        <div className="flex flex-col">
-          <div className="md:flex md:flex-row flex flex-col-reverse items-center">
-            <div className="md:text-left text-center">
-              <h2>Un sachet de nuestro trabajo</h2>
-              <p className="mt-5">
-                Testimonios, otros proyectos, casos de estudio. Incluso pueden
-                ser garantías contra el precio.
-              </p>
-            </div>
-            <div className="w-2/3">
-              <Image
-                src={s4}
-                width={500}
-                height={500}
-                alt="image"
-                objectFit="contain"
-              />
-            </div>
-          </div>
-          <div className="flex justify-center mt-10">
-            <ActionButton>
-              <p>Dime cuántos necesitas y para cuándo.</p>
-            </ActionButton>
-          </div>
-        </div>
-      </section> */}
       <section className="pb-40">
         <div className="flex flex-col">
           <div className="md:flex md:flex-row flex flex-col-reverse items-center">
